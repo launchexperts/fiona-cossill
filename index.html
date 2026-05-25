@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Fiona Cossill — Business Coach for Service Business Owners</title>
+<meta name="description" content="I help exceptional 6+ figure service business owners create more cashflow and time, so they can live life on their terms." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,wght@0,500;0,600;1,500&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand:   { blue: '#05575b', blueDark: '#043d57', blueSoft: '#d9e7ec', sky: '#98bbc8' },
+          gold:    { DEFAULT: '#B8933D', dark: '#8c6f2a' },
+          ink:     '#0f1f24',
+          cream:   '#f4f1ea',
+          mist:    '#eaede8',
+        },
+        fontFamily: {
+          sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          serif: ['Fraunces', 'serif'],
+          script: ['Caveat', 'cursive'],
+        },
+        boxShadow: {
+          soft: '0 20px 60px -20px rgba(31,36,23,0.18)',
+          card: '0 12px 40px -16px rgba(5,87,91,0.18)',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; color: #1f2417; background:#fff;}
+  .hero-bg{
+    background:
+      radial-gradient(1100px 600px at 85% 20%, #98bbc8 0%, transparent 60%),
+      radial-gradient(800px 500px at 10% 90%, #d9e7ec 0%, transparent 60%),
+      linear-gradient(135deg,#eef4f6 0%, #b7d1da 55%, #7fa8b7 100%);
+  }
+  .watermark { font-family:'Plus Jakarta Sans'; font-weight:800; letter-spacing:-.04em; }
+  .marquee-track{ animation: marquee 38s linear infinite; }
+  @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+  .check::before{
+    content:""; display:inline-block; width:22px; height:22px; border-radius:9999px;
+    background:#1f2417; color:#fff; margin-right:.75rem; vertical-align:-5px;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2398bbc8' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
+    background-size:14px; background-repeat:no-repeat; background-position:center;
+  }
+  .pill-btn{ transition:transform .2s ease, box-shadow .2s ease; }
+  .pill-btn:hover{ transform: translateY(-1px); box-shadow:0 12px 30px -10px rgba(31,36,23,.35);}
+  .arrow-btn .arrow{ transition: transform .2s ease;}
+  .arrow-btn:hover .arrow{ transform: translateX(4px);}
+  .underline-flourish{
+    background-image: linear-gradient(transparent 68%, rgba(184,147,61,.35) 68%);
+    background-repeat: no-repeat;
+  }
+  /* subtle textures */
+  .tx-grain{ position:relative; isolation:isolate; }
+  .tx-grain::before{
+    content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; opacity:.5;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.12  0 0 0 0 0.14  0 0 0 0 0.09  0 0 0 0.06 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  .tx-dots{ position:relative; isolation:isolate; }
+  .tx-dots::before{
+    content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; opacity:.55;
+    background-image: radial-gradient(rgba(5,87,91,0.18) 1px, transparent 1.2px);
+    background-size: 22px 22px;
+    mask-image: linear-gradient(180deg, transparent 0%, #000 25%, #000 75%, transparent 100%);
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 25%, #000 75%, transparent 100%);
+  }
+  .tx-blobs{ position:relative; isolation:isolate; overflow:hidden; }
+  .tx-blobs::before{
+    content:""; position:absolute; z-index:-1; pointer-events:none;
+    width:520px; height:520px; border-radius:9999px; filter:blur(90px);
+    background: radial-gradient(circle, rgba(152,187,200,0.55), transparent 70%);
+    top:-160px; right:-140px;
+  }
+  .tx-blobs::after{
+    content:""; position:absolute; z-index:-1; pointer-events:none;
+    width:460px; height:460px; border-radius:9999px; filter:blur(100px);
+    background: radial-gradient(circle, rgba(184,147,61,0.32), transparent 70%);
+    bottom:-180px; left:-120px;
+  }
+  .tx-grid{ position:relative; isolation:isolate; }
+  .tx-grid::before{
+    content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; opacity:.5;
+    background-image:
+      linear-gradient(to right, rgba(31,36,23,0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(31,36,23,0.06) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+  }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ============ HERO ============ -->
+<section class="hero-bg">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-6">
+    <!-- Nav -->
+    <nav class="flex items-center justify-between rounded-full bg-white/70 backdrop-blur px-4 sm:px-6 py-3 shadow-soft">
+      <a href="#" class="flex items-center gap-2 pl-2">
+        <span class="grid place-items-center w-9 h-9 rounded-full bg-ink text-brand-blue font-serif text-lg">F</span>
+        <span class="font-semibold tracking-tight">Fiona Cossill</span>
+      </a>
+      <ul class="hidden md:flex items-center gap-8 text-sm text-ink/80">
+        <li><a href="#" class="hover:text-ink">Home</a></li>
+        <li><a href="#about" class="hover:text-ink">About</a></li>
+        <li><a href="#coaching" class="hover:text-ink">Coaching</a></li>
+        <li><a href="#stories" class="hover:text-ink">Success Stories</a></li>
+        <li><a href="#contact" class="hover:text-ink">Contact</a></li>
+      </ul>
+      <a href="https://form.jotform.com/242748944050864" class="pill-btn inline-flex items-center gap-2 rounded-full bg-ink text-white text-sm font-medium px-5 py-2.5">
+        Book a Call
+        <span class="grid place-items-center w-6 h-6 rounded-full bg-brand-blue text-white">→</span>
+      </a>
+    </nav>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10 pt-12 lg:pt-16 pb-16 lg:pb-20">
+    <div class="grid lg:grid-cols-12 gap-10 items-end">
+      <!-- copy -->
+      <div class="lg:col-span-7 relative z-10">
+        <h1 class="text-[2.5rem] sm:text-5xl lg:text-[4.25rem] leading-[1.05] font-extrabold tracking-tight">
+          Create More <span class="underline-flourish">Cashflow</span> &amp; Time
+          <span class="block">From Your Business</span>
+          <span class="block font-script font-bold text-[1.2em] leading-none text-ink/85 mt-2">— Live Life on Your Terms.</span>
+        </h1>
+        <p class="mt-6 max-w-xl text-ink/75 text-lg">
+          Proven strategies, real-world tools, and 30+ years of expert guidance to help exceptional service business owners simplify their business and grow with confidence.
+        </p>
+
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a href="https://form.jotform.com/242748944050864" class="pill-btn arrow-btn inline-flex items-center gap-3 rounded-full bg-ink text-white font-semibold px-6 py-4">
+            Book a Strategy Call
+            <span class="arrow grid place-items-center w-8 h-8 rounded-full bg-brand-blue text-white">→</span>
+          </a>
+          <a href="#stories" class="inline-flex items-center gap-2 text-ink/80 font-medium hover:text-ink">
+            <span class="grid place-items-center w-9 h-9 rounded-full bg-white shadow-soft">▶</span>
+            See Client Results
+          </a>
+        </div>
+      </div>
+
+      <!-- portrait -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative">
+          <img src="https://assets.cdn.filesafe.space/TexJvZ1o5eVS0PT7DYeg/media/69fe53c125c3d6001ab515ec.png" alt="Fiona Cossill" class="relative z-10 w-full object-contain object-bottom drop-shadow-2xl block scale-110 origin-bottom lg:h-[780px] lg:-mb-20" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="bg-cream border-y border-ink/10 tx-dots">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 py-14 lg:py-20">
+    <dl class="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 text-center sm:text-left">
+      <div class="sm:border-r sm:border-ink/15 sm:pr-6">
+        <dt class="text-5xl lg:text-6xl font-extrabold tracking-tight text-ink">30<span class="text-gold">+</span></dt>
+        <dd class="text-sm text-ink/65 mt-2 uppercase tracking-[0.2em]">Years of Business Experience</dd>
+      </div>
+      <div class="sm:border-r sm:border-ink/15 sm:px-6">
+        <dt class="text-5xl lg:text-6xl font-extrabold tracking-tight text-ink">500<span class="text-gold">+</span></dt>
+        <dd class="text-sm text-ink/65 mt-2 uppercase tracking-[0.2em]">Business Owners Coached</dd>
+      </div>
+      <div class="sm:pl-6">
+        <dt class="text-5xl lg:text-6xl font-extrabold tracking-tight text-ink">6&amp;7<span class="text-gold">fig</span></dt>
+        <dd class="text-sm text-ink/65 mt-2 uppercase tracking-[0.2em]">Service Business Specialist</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ PROBLEMS ============ -->
+<section class="py-20 lg:py-28 tx-blobs">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-5">
+      <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+        Stuck or Overwhelmed
+        <span class="block">as a <span class="text-brand-blueDark">Service Business Owner?</span></span>
+      </h2>
+      <a href="#coaching" class="pill-btn arrow-btn inline-flex items-center gap-3 rounded-full bg-brand-blue text-white font-semibold px-6 py-3.5 mt-8">
+        Let's Find Clarity
+        <span class="arrow grid place-items-center w-8 h-8 rounded-full bg-ink text-brand-blue">→</span>
+      </a>
+
+      <ul class="mt-10 space-y-4 text-ink/80">
+        <li class="check">You're working harder than ever — but cashflow still feels tight.</li>
+        <li class="check">You're juggling every role yourself, and it's draining your energy.</li>
+        <li class="check">You crave a clear, personalised roadmap to grow with confidence.</li>
+      </ul>
+    </div>
+
+    <div class="lg:col-span-7">
+      <div class="relative pt-20 lg:pt-28">
+        <!-- backing card -->
+        <div class="relative rounded-[2rem] bg-gradient-to-br from-brand-sky/60 via-brand-blueSoft to-cream aspect-[5/3] shadow-card overflow-hidden">
+          <!-- soft inner halo -->
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(255,255,255,0.6),transparent_60%)]"></div>
+          <!-- ground shadow under figure -->
+          <div class="absolute left-1/2 -translate-x-1/2 bottom-6 w-2/3 h-6 rounded-full bg-ink/20 blur-2xl"></div>
+        </div>
+        <!-- cutout image popping out of the card -->
+        <img src="https://assets.cdn.filesafe.space/TexJvZ1o5eVS0PT7DYeg/media/69fe53c125c3d6001ab515ec.png"
+             alt="Fiona Cossill"
+             class="absolute left-1/2 -translate-x-1/2 bottom-0 h-[115%] object-contain object-bottom drop-shadow-[0_25px_30px_rgba(15,31,36,0.35)] z-10" />
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-4 mt-6">
+        <div class="rounded-2xl border border-ink/10 p-5">
+          <div class="w-9 h-9 rounded-full bg-brand-blueSoft text-brand-blueDark grid place-items-center mb-3">▲</div>
+          <h3 class="font-bold">Growth Stuck</h3>
+          <p class="text-sm text-ink/65 mt-1">Plateaued revenue — need fresh strategies to break the ceiling.</p>
+        </div>
+        <div class="rounded-2xl border border-ink/10 p-5">
+          <div class="w-9 h-9 rounded-full bg-brand-blueSoft text-brand-blueDark grid place-items-center mb-3">♛</div>
+          <h3 class="font-bold">Wearing All The Hats</h3>
+          <p class="text-sm text-ink/65 mt-1">Juggling operations, sales and delivery — alone, and exhausted.</p>
+        </div>
+        <div class="rounded-2xl border border-ink/10 p-5">
+          <div class="w-9 h-9 rounded-full bg-brand-blueSoft text-brand-blueDark grid place-items-center mb-3">◎</div>
+          <h3 class="font-bold">No Clear Roadmap</h3>
+          <p class="text-sm text-ink/65 mt-1">Every decision feels risky without clarity on the numbers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COACHING / SERVICES ============ -->
+<section id="coaching" class="py-20 lg:py-28 bg-cream tx-grid">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+      <div>
+        <p class="text-xs uppercase tracking-[0.3em] text-brand-blueDark font-semibold">— Here's How I Help You</p>
+        <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-3">
+          Grow With <span class="font-script font-bold text-[1.2em] leading-none">Confidence</span>
+        </h2>
+        <p class="text-ink/65 mt-3 max-w-xl">Proven tools, personalised strategy, and the accountability to turn your goals into measurable results.</p>
+      </div>
+      <a href="#contact" class="pill-btn arrow-btn inline-flex items-center gap-3 rounded-full bg-ink text-white font-semibold px-6 py-3.5 self-start">
+        See All Programs
+        <span class="arrow grid place-items-center w-8 h-8 rounded-full bg-brand-blue text-white">→</span>
+      </a>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- card 1 -->
+      <article class="rounded-3xl bg-white p-7 shadow-card flex flex-col">
+        <div class="text-xs font-semibold uppercase tracking-widest text-ink/50">01</div>
+        <h3 class="text-2xl font-bold mt-3">1:1 Coaching Sessions</h3>
+        <p class="text-sm text-ink/70 mt-3">Tailored weekly or bi-weekly sessions focused on your biggest challenges, your numbers, and the next right step.</p>
+        <div class="mt-6 aspect-[4/3] rounded-2xl bg-mist overflow-hidden">
+          <img src="https://assets.cdn.filesafe.space/TexJvZ1o5eVS0PT7DYeg/media/69fac9d912def9aebe8d3820.jpeg" alt="" class="w-full h-full object-cover object-top">
+        </div>
+        <a href="#contact" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-blueDark">Learn more →</a>
+      </article>
+
+      <!-- card 2 - featured -->
+      <article class="rounded-3xl bg-brand-blue text-white p-7 shadow-card flex flex-col relative ring-1 ring-white/10">
+        <span class="absolute -top-3 left-7 bg-gold text-white text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full shadow-md">Most Popular</span>
+        <div class="text-xs font-semibold uppercase tracking-widest text-gold">02</div>
+        <h3 class="text-2xl font-bold mt-3 text-white">Signature Coaching Program</h3>
+        <p class="text-sm text-white/85 mt-3">A 90-day immersive: clarity on cashflow, simplified systems, and a roadmap you can actually execute — with async support between sessions.</p>
+        <ul class="mt-6 space-y-2 text-sm text-white/90">
+          <li>• Weekly 1:1 strategy calls</li>
+          <li>• Cashflow &amp; pricing diagnostic</li>
+          <li>• Personalised 90-day roadmap</li>
+        </ul>
+        <a href="#contact" class="mt-auto pt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-white">Apply now →</a>
+      </article>
+
+      <!-- card 3 -->
+      <article class="rounded-3xl bg-white p-7 shadow-card flex flex-col">
+        <div class="text-xs font-semibold uppercase tracking-widest text-ink/50">03</div>
+        <h3 class="text-2xl font-bold mt-3">VIP Strategy Day</h3>
+        <p class="text-sm text-ink/70 mt-3">A focused half- or full-day workshop to break stuck patterns, clarify direction and leave with a 90-day action plan.</p>
+        <div class="mt-6 aspect-[4/3] rounded-2xl bg-mist overflow-hidden">
+          <img src="https://assets.cdn.filesafe.space/TexJvZ1o5eVS0PT7DYeg/media/66d0172dd2c250641c1e10ea.jpeg" alt="" class="w-full h-full object-cover">
+        </div>
+        <a href="#contact" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-blueDark">Learn more →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="py-20 lg:py-28 tx-grain">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-5">
+      <div class="relative rounded-[2rem] overflow-hidden">
+        <img src="https://assets.cdn.filesafe.space/TexJvZ1o5eVS0PT7DYeg/media/6a1238a16cc0eead5cb9c8d2.jpg" alt="Fiona Cossill" class="w-full aspect-[4/5] object-cover">
+      </div>
+    </div>
+
+    <div class="lg:col-span-7">
+      <p class="text-xs uppercase tracking-[0.3em] text-brand-blueDark font-semibold">— About Fiona</p>
+      <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-3">
+        I've Built It.
+        <span class="block">Now I'll Help You <span class="font-script font-bold text-[1.2em] leading-none text-brand-blueDark">Scale It.</span></span>
+      </h2>
+      <p class="text-ink/75 mt-5 max-w-2xl">
+        With over 30 years of business experience, I guide exceptional owners to create more time &amp; more cashflow — so they can live life on their terms, without the daily overwhelm.
+      </p>
+      <p class="text-ink/75 mt-4 max-w-2xl">
+        I help people slow the noise, reconnect to themselves, and make decisions from clarity instead of pressure. Because clarity isn't something you chase — it's something you return to.
+      </p>
+
+      <div class="mt-8 flex items-center gap-4">
+        <a href="#contact" class="pill-btn arrow-btn inline-flex items-center gap-3 rounded-full bg-brand-blue text-white font-semibold px-6 py-3.5">
+          Read My Full Story
+          <span class="arrow grid place-items-center w-8 h-8 rounded-full bg-ink text-brand-blue">→</span>
+        </a>
+        <div class="flex items-center gap-8 pl-2">
+          <div>
+            <p class="text-3xl font-extrabold">30<span class="text-brand-blueDark">+</span></p>
+            <p class="text-xs text-ink/60 uppercase tracking-wider">Years Experience</p>
+          </div>
+          <div>
+            <p class="text-3xl font-extrabold">500<span class="text-brand-blueDark">+</span></p>
+            <p class="text-xs text-ink/60 uppercase tracking-wider">Owners Coached</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pillars -->
+      <div class="mt-10 grid sm:grid-cols-3 gap-4">
+        <div class="rounded-2xl border border-ink/10 p-5">
+          <h3 class="font-bold text-sm flex items-center gap-2"><span class="text-brand-blueDark">●</span> Strategic Clarity</h3>
+          <p class="text-xs text-ink/65 mt-2">A focused 90-day roadmap that moves the needle on revenue — not activity.</p>
+        </div>
+        <div class="rounded-2xl border border-ink/10 p-5">
+          <h3 class="font-bold text-sm flex items-center gap-2"><span class="text-brand-blueDark">●</span> Systems That Scale</h3>
+          <p class="text-xs text-ink/65 mt-2">Operational infrastructure that lets your business run and grow without your constant involvement.</p>
+        </div>
+        <div class="rounded-2xl border border-ink/10 p-5">
+          <h3 class="font-bold text-sm flex items-center gap-2"><span class="text-brand-blueDark">●</span> Confident Decisions</h3>
+          <p class="text-xs text-ink/65 mt-2">Know your numbers, price your value, and lead from clarity instead of pressure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="stories" class="py-20 lg:py-28 bg-brand-blueDark text-white relative overflow-hidden">
+  <div class="absolute -top-32 -right-32 w-[480px] h-[480px] rounded-full bg-brand-blue/15 blur-3xl"></div>
+  <div class="absolute -bottom-32 -left-20 w-[420px] h-[420px] rounded-full bg-gold/15 blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="max-w-2xl">
+      <p class="text-xs uppercase tracking-[0.3em] text-gold font-semibold">— Success Stories</p>
+      <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight mt-3">
+        From First Call to <span class="font-script font-bold text-[1.2em] leading-none text-gold">Real Results.</span>
+      </h2>
+    </div>
+
+    <div class="mt-12 grid md:grid-cols-3 gap-6">
+      <figure class="rounded-3xl bg-white/8 backdrop-blur border border-white/15 p-7">
+        <div class="text-gold text-3xl leading-none mb-3">"</div>
+        <blockquote class="text-white/90 leading-relaxed">
+          Working with Fiona has been game changing. She helped us get clear and confident on our numbers and the way we do things so we can move forward with confidence.
+        </blockquote>
+        <figcaption class="mt-6 text-sm">
+          <span class="font-semibold">Chris &amp; Courtney</span>
+          <span class="block text-white/60 text-xs mt-1">Brick, Block &amp; Mortar</span>
+        </figcaption>
+      </figure>
+
+      <figure class="rounded-3xl bg-brand-blue text-white p-7 ring-1 ring-white/10">
+        <div class="text-gold text-3xl leading-none mb-3">"</div>
+        <blockquote class="leading-relaxed text-white">
+          Fiona has been fantastic — helping me understand where I am, what is missing, and the exact steps to take next to achieve my goal.
+        </blockquote>
+        <figcaption class="mt-6 text-sm">
+          <span class="font-semibold text-white">Estelle &amp; Kelvin</span>
+          <span class="block text-white/70 text-xs mt-1">KSW Design &amp; Renovations</span>
+        </figcaption>
+      </figure>
+
+      <figure class="rounded-3xl bg-white/8 backdrop-blur border border-white/15 p-7">
+        <div class="text-gold text-3xl leading-none mb-3">"</div>
+        <blockquote class="text-white/90 leading-relaxed">
+          Fiona is amazing and supportive — she just knows all the areas you need to focus on in your business.
+        </blockquote>
+        <figcaption class="mt-6 text-sm">
+          <span class="font-semibold">Lisa Shanta</span>
+          <span class="block text-white/60 text-xs mt-1">SB Protect Insurance Brokers</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-3 gap-8 border-t border-white/15 pt-10">
+      <div>
+        <p class="text-4xl font-extrabold">+240<span class="text-gold">%</span></p>
+        <p class="text-sm text-white/70 mt-1">Avg. Revenue Growth Per Client</p>
+      </div>
+      <div>
+        <p class="text-4xl font-extrabold">94<span class="text-gold">%</span></p>
+        <p class="text-sm text-white/70 mt-1">Client Retention Rate</p>
+      </div>
+      <div>
+        <p class="text-4xl font-extrabold">30<span class="text-gold">yr</span></p>
+        <p class="text-sm text-white/70 mt-1">Years in Practice</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA / NEWSLETTER ============ -->
+<section id="contact" class="py-20 lg:py-28 bg-cream tx-blobs">
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+        Ready to create more <span class="font-script font-bold text-[1.2em] leading-none text-brand-blueDark">cashflow &amp; time?</span>
+      </h2>
+      <p class="text-ink/70 mt-5 max-w-md">Book a complimentary strategy call. We'll diagnose your biggest bottleneck and map the next right step — no pitch, just clarity.</p>
+      <a href="https://form.jotform.com/242748944050864" class="pill-btn arrow-btn inline-flex items-center gap-3 rounded-full bg-ink text-white font-semibold px-7 py-4 mt-8">
+        Book Your Strategy Call
+        <span class="arrow grid place-items-center w-8 h-8 rounded-full bg-brand-blue text-white">→</span>
+      </a>
+    </div>
+
+    <div class="rounded-3xl bg-white p-8 shadow-card">
+      <p class="text-xs uppercase tracking-[0.3em] text-brand-blueDark font-semibold">— Stay In Touch</p>
+      <h3 class="text-2xl font-bold mt-3">Tips on growth, cashflow &amp; leadership</h3>
+      <p class="text-sm text-ink/65 mt-2">Join the Business Improvement Academy community — practical tools, monthly, no fluff.</p>
+      <form class="mt-6 flex flex-col sm:flex-row gap-3" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="Your email address" class="flex-1 rounded-full border border-ink/15 bg-mist/50 px-5 py-3.5 text-sm focus:outline-none focus:border-brand-blueDark" />
+        <button class="pill-btn rounded-full bg-brand-blue text-white font-semibold px-6 py-3.5 text-sm">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ink text-white/80">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 py-14 grid md:grid-cols-4 gap-10">
+    <div class="md:col-span-2">
+      <div class="flex items-center gap-2">
+        <span class="grid place-items-center w-9 h-9 rounded-full bg-brand-blue text-white font-serif text-lg">F</span>
+        <span class="font-semibold text-white">Fiona Cossill</span>
+      </div>
+      <p class="mt-4 text-sm max-w-md">Business Coach for exceptional 6+ figure service business owners. Helping you create more cashflow &amp; time — so you can live life on your terms.</p>
+    </div>
+    <div>
+      <p class="text-white font-semibold mb-3 text-sm">Navigate</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#about" class="hover:text-brand-blue">About</a></li>
+        <li><a href="#coaching" class="hover:text-brand-blue">Coaching</a></li>
+        <li><a href="#stories" class="hover:text-brand-blue">Success Stories</a></li>
+        <li><a href="#contact" class="hover:text-brand-blue">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="text-white font-semibold mb-3 text-sm">Connect</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="https://form.jotform.com/242748944050864" class="hover:text-brand-blue">Book a Call</a></li>
+        <li><a href="https://www.linkedin.com/in/fiona-cossill-service-business-growth-coach-525b957/" class="hover:text-brand-blue">LinkedIn</a></li>
+        <li><a href="https://www.facebook.com/BusinessImprovementAcademy/" class="hover:text-brand-blue">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex flex-col sm:flex-row gap-3 justify-between text-xs text-white/50">
+      <p>© <span id="yr"></span> Fiona Cossill. All rights reserved.</p>
+      <p>Terms &amp; Conditions  ·  Privacy</p>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
